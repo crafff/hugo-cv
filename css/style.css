@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* 左侧导航栏 */
+.sidebar {
+  width: 260px;
+  background-color: #1f2937;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 让内容从上往下 */
+  position: fixed;
+  height: 100%;
+}
+
+/* 包裹头像和标题的容器 */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ✅ 改头像尺寸为矩形并确保不变形 */
+.sidebar .avatar {
+  width: 110px;
+  height: 145px;
+  object-fit: cover;        /* 保持比例填充 */
+  border-radius: 10px;      /* 圆角矩形 */
+  margin-bottom: 1rem;
+}
+
+/* ✅ 居中标题和描述 */
+.sidebar h2 {
+  margin: 0.5rem 0 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.sidebar p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 0rem;
+}
+
+/* 导航菜单 */
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 0rem;
+}
+
+.sidebar nav ul li {
+  margin: 0.5rem 0;
+}
+
+.sidebar nav ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s ease-in-out;
+}
+
+.sidebar nav ul li a:hover {
+  background: #374151;
+  color: #fff;
+}
+
+/* 主体内容 */
+.content {
+  margin-left: 260px;
+  padding: 2rem 3rem;
+  line-height: 1.7;
+  max-width: 850px;
+}
+
+.content h1, .content h2, .content h3 {
+  color: #1f2937;
+}
+
+.content a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* 移动端自适应 */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
