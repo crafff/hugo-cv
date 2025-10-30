@@ -1,0 +1,65 @@
+baseURL = "https://ruitaozhou.github.io/"
+languageCode = "en-us"
+title = "Ruitao Zhou | Portfolio"
+theme = "PaperMod"
+
+[pagination]
+  pagerSize = 5
+
+[params]
+  author = "Ruitao Zhou"
+  description = "Personal CV and Portfolio of Ruitao Zhou"
+  defaultTheme = "light"
+  ShowBreadCrumbs = false
+  ShowReadingTime = false
+  ShowPostNavLinks = false
+  ShowShareButtons = false
+  hideSummary = true
+  favicon = "/images/fbfe131f-506b-41b5-8319-64d9babeca7c.png"
+
+  [params.profileMode]
+    enabled = true
+    title = "Ruitao Zhou"
+    subtitle = "Graduate Student in Computer Science @ Northwestern University"
+    imageUrl = "/images/fbfe131f-506b-41b5-8319-64d9babeca7c.png"
+    imageTitle = "Profile"
+    imageWidth = 180
+    imageHeight = 180
+    buttons = [
+      { name = "About", url = "#about" },
+      { name = "Education", url = "#education" },
+      { name = "Experience", url = "#experience" },
+      { name = "Projects", url = "#projects" },
+      { name = "Achievements", url = "#achievements" },
+      { name = "Contact", url = "#contact" }
+    ]
+
+[[menu.main]]
+  name = "About"
+  url = "#about"
+  weight = 1
+
+[[menu.main]]
+  name = "Education"
+  url = "#education"
+  weight = 2
+
+[[menu.main]]
+  name = "Experience"
+  url = "#experience"
+  weight = 3
+
+[[menu.main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 4
+
+[[menu.main]]
+  name = "Achievements"
+  url = "#achievements"
+  weight = 5
+
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 6
